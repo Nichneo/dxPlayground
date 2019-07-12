@@ -1,0 +1,33 @@
+=== Test Reports
+FORMAT  FILE
+──────  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+txt     c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-result.txt
+txt     c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-run-id.txt
+junit   c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-result-7072p00006uarDQ-junit.xml
+json    c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-result-7072p00006uarDQ.json
+
+=== Test Results
+TEST NAME                               OUTCOME  MESSAGE  RUNTIME (MS)
+──────────────────────────────────────  ───────  ───────  ────────────
+myDataGenerationTests.testloadMockData  Pass              12
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ──────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            1
+Passing              1
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Start Time      Jul 11, 2019 12:54 PM
+Test Execution Time  12 ms
+Test Total Time      12 ms
+Command Time         11128 ms
+Hostname             https://curious-panda-gf6fg3-dev-ed.my.salesforce.com
+Org Id               00D2p0000014BRIEA2
+Username             nicholas.fiorendi@curious-panda-gf6fg3.com
+Test Run Id          7072p00006uarDQ
+User Id              0052p000009M7oZAAS
+

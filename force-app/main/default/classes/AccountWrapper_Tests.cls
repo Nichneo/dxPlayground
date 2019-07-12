@@ -2,7 +2,7 @@
 private class AccountWrapper_Tests {
   @testSetup
   static void loadTestData(){
-    List<Account> accounts = (List<Account>) Test.loadData(Account.SObjectType, 'accountData');
+    List<Account> accounts = (List<Account>) Test.loadData(Account.SObjectType, 'Mock_Data');
     List<Opportunity> opps = new List<Opportunity>();
     for(Account a : accounts){
       opps.addAll(TestFactory.generateOppsForAccount(a.id, 1000.00, 5));
@@ -25,7 +25,7 @@ private class AccountWrapper_Tests {
     System.assert(sanityCheckListOfOpps.size() > 0, 'You need an opportunity to continue');
     Test.startTest();
     for(AccountWrapper a : accounts){
-      System.assertEquals(a.getRoundedAvgPriceOfOpps(), 1000.00, 'Expected to get 1000.00');
+      System.assertEquals(a.getRoundedAvgPriceOfOpps(), 151000.00, 'Expected to get 151000.00');
     }
     Test.stopTest();
   }
