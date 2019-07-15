@@ -3,13 +3,13 @@ FORMAT  FILE
 ──────  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 txt     c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-result.txt
 txt     c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-run-id.txt
-junit   c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-result-7072p00006ubkI7-junit.xml
-json    c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-result-7072p00006ubkI7.json
+junit   c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-result-7072p00006udgtd-junit.xml
+json    c:\Users\fiorendi\Salesforce_LIDL\DXPlayground\.sfdx\tools\testresults\apex\test-result-7072p00006udgtd.json
 
 === Test Results
-TEST NAME                      OUTCOME  MESSAGE  RUNTIME (MS)
-─────────────────────────────  ───────  ───────  ────────────
-Calculator_Tests.testAddition  Pass              25
+TEST NAME                             OUTCOME  MESSAGE  RUNTIME (MS)
+────────────────────────────────────  ───────  ───────  ────────────
+ExternalSearch_tests.test_method_two  Pass              27
 
 === Test Summary
 NAME                 VALUE
@@ -21,13 +21,13 @@ Failing              0
 Skipped              0
 Pass Rate            100%
 Fail Rate            0%
-Test Start Time      Jul 12, 2019 4:58 PM
-Test Execution Time  25 ms
-Test Total Time      25 ms
-Command Time         4227 ms
+Test Start Time      Jul 15, 2019 5:59 PM
+Test Execution Time  27 ms
+Test Total Time      27 ms
+Command Time         4618 ms
 Hostname             https://curious-panda-gf6fg3-dev-ed.my.salesforce.com
 Org Id               00D2p0000014BRIEA2
 Username             nicholas.fiorendi@curious-panda-gf6fg3.com
-Test Run Id          7072p00006ubkI7
+Test Run Id          7072p00006udgtd
 User Id              0052p000009M7oZAAS
 
