@@ -1,0 +1,40 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes, flexipage:availableForRecordHome,force:hasRecordId, forceCommunity:availableForAllPageTypes, force:lightningQuickAction" controller="ApiCallLightningComponent" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doHandleClick}"/>
+    <aura:attribute name="HourlyODataCallout" type="String"/>
+    <aura:attribute name="DailyApiRequestsMax" type="Integer"/>
+    <aura:attribute name="DailyApiRequestsRemaining" type="Integer"/>
+    <aura:attribute name="DailyBulkApiRequestsMax" type="Integer"/>
+    <aura:attribute name="DailyBulkApiRequestsRemaining" type="Integer"/>
+    <aura:attribute name="DailyStandardVolumePlatformEvents" type="String"/>
+    <aura:attribute name="MonthlyPlatformEvents" type="String"/>
+    <aura:attribute name="HourlyLongTermIdMapping" type="String"/>
+    <aura:attribute name="HourlyShortTermIdMapping" type="String"/>
+    <aura:attribute name="DataStorageMB" type="String"/>
+    <aura:attribute name="FileStorageMB" type="String"/>
+    <aura:attribute name="DailyGenericStreamingApiEventsMax" type="Integer"/>
+    <aura:attribute name="DailyGenericStreamingApiEventsRemaining" type="Integer"/>
+    
+    <div class="slds-box slds-theme_default">
+        <!--Header part-->
+        <div class="slds-page-header" role="banner">
+            <div class="slds-media__body">
+                <p class="slds-page-header__title slds-truncate" title="limits monitoring">Limits Monitoring</p>
+                <br></br>
+                <lightning:button variant="brand" label="Refresh Data" onclick="{!c.doHandleClick }" />
+            </div>
+        </div>
+        <!--Header part close-->
+        <h3><pre class="slds-section-title--divider"> Hourly OData Callout = {!v.HourlyODataCallout}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> Daily API Requests = Max:{!v.DailyApiRequestsMax},Remaining:{!v.DailyApiRequestsRemaining}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> Daily Bulk Api Requests = Max:{!v.DailyBulkApiRequestsMax},Remaining:{!v.DailyBulkApiRequestsRemaining}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> Daily Standard Volume Platform Events = {!v.DailyStandardVolumePlatformEvents}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> Monthly Platform Events = {!v.MonthlyPlatformEvents}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> Hourly Long-Term Id Mapping = {!v.HourlyLongTermIdMapping}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> Hourly Short-Term Id Mapping = {!v.HourlyShortTermIdMapping}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> Data Storage MB = {!v.DataStorageMB}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> File Storage MB = {!v.FileStorageMB}</pre></h3>
+        <h3><pre class="slds-section-title--divider"> Daily Generic Streaming Api Events = Max:{!v.DailyGenericStreamingApiEventsMax},Remaining:{!v.DailyGenericStreamingApiEventsRemaining}</pre></h3>
+        
+    </div>
+    
+</aura:component>
